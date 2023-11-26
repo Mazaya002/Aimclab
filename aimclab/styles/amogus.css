@@ -1,0 +1,94 @@
+html, body {
+    height: 100%; /* Set the height of the html and body to 100% */
+    margin: 0; /* Reset default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Minimum height is 100% of the viewport height */
+}
+
+main {
+    flex-grow: 1; /* Allows the main content to grow and fill available space */
+}
+
+
+.about-us {
+    text-align: center;
+    padding: 20px;
+}
+
+.images img {
+    width: 30%;  /* Adjust width as needed */
+    margin: 10px; /* Space around images */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+.game-description {
+    margin-top: 20px;
+    font-size: 18px; /* Adjust font size as needed */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#registerBtn {
+    border-radius: 15px;  /* Rounded edges */
+    font-weight: bold;  /* Making the text bold */
+    background-color: #00FF00;  /* Bright green color */
+    color: red;  /* White text for better visibility */
+    padding: 10px 20px;  /* Adequate padding for better appearance */
+    border: none;  /* Remove default border */
+    cursor: pointer;  /* Cursor changes to pointer to indicate it's clickable */
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+#registerBtn:hover {
+    background-color: #00CC00;  /* Slightly darker green on hover for visual feedback */
+}
+#banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #555;
+}
+
+#banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a, nav button {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav button {
+    padding: 5px 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #777;
+}

@@ -1,0 +1,200 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Minimum height is 100% of the viewport height */
+}
+
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f4f4f4;
+}
+
+nav button {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #ddd;
+}
+
+#description {
+    font-family: "Georgia", serif;  /* Elegant and commonly supported font */
+    font-size: 20px;  /* Increased font size */
+    padding: 20px;
+    background-color: #e0e0e0;  /* Distinct background color */
+    border-radius: 10px;  /* Optional: rounded corners for aesthetics */
+    margin: 20px 0;  /* Space above and below the description */
+    color: #333;  /* Dark text color for contrast */
+    text-align: center;
+}
+
+#download-btn-container {
+    text-align: center; /* Center the button horizontally */
+    margin: 20px 0; /* Spacing above and below the button */
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px; /* Sizable padding for a large button */
+    background-color: #f30000; /* Dark background color */
+    color: #fff; /* White text color */
+    font-size: 24px; /* Larger font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Slight rounding of corners */
+    text-decoration: none; /* No underline for the link */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.download-btn:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+}
+
+#registerBtn {
+    border-radius: 15px;  /* Rounded edges */
+    font-weight: bold;  /* Making the text bold */
+    background-color: #00FF00;  /* Bright green color */
+    color: red;  /* White text for better visibility */
+    padding: 10px 20px;  /* Adequate padding for better appearance */
+    border: none;  /* Remove default border */
+    cursor: pointer;  /* Cursor changes to pointer to indicate it's clickable */
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+
+#registerBtn:hover {
+    background-color: #00CC00;  /* Slightly darker green on hover for visual feedback */
+}
+
+.image-gallery {
+    display: flex;  /* Aligns images side by side */
+    justify-content: center; /* Centers images in the container */
+    margin: 20px 0; /* Adds some space above and below the image gallery */
+}
+
+.image-gallery img {
+    width: 25%; /* Each image takes up 25% of the gallery width */
+    max-width: 100%; /* Ensures image responsiveness */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 10px; /* Adds space between images */
+}
+
+
+/* Banner */
+#banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #555;
+}
+
+#banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Services */
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.service {
+    flex: 0 0 calc(50% - 20px); /* Take up half the container width minus margins */
+    margin: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.service h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.service p {
+    font-size: 16px;
+    color: #777;
+}
+
+.service img {
+    max-width: 80px;  /* Adjust this value as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;  /* Centering the image and adding space below */
+}
+
+.service:hover {
+    background-color: #f7f7f7;  /* Lighter shade on hover for feedback */
+    cursor: pointer;  /* Change cursor to hand on hover */
+}
+/* Actions */
+#actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#actions a {
+    margin: 0 20px;
+}
+
+#actions img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+html, body {
+    height: 100%; /* Set the height of the html and body to 100% */
+    margin: 0; /* Reset default margin */
+}
+
+main {
+    flex-grow: 1; /* Allows the main content to grow and fill available space */
+}

@@ -1,0 +1,94 @@
+#banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #555;
+}
+
+#banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a, nav button {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav button {
+    padding: 5px 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #777;
+}
+
+.registration-form {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    /* Add any additional styles to match your site's theme */
+}
+
+.registration-form input, 
+.registration-form select, 
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.registration-form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #555;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#registerBtn {
+    border-radius: 15px;  /* Rounded edges */
+    font-weight: bold;  /* Making the text bold */
+    background-color: #00FF00;  /* Bright green color */
+    color: red;  /* White text for better visibility */
+    padding: 10px 20px;  /* Adequate padding for better appearance */
+    border: none;  /* Remove default border */
+    cursor: pointer;  /* Cursor changes to pointer to indicate it's clickable */
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+#registerBtn:hover {
+    background-color: #00CC00;  /* Slightly darker green on hover for visual feedback */
+}

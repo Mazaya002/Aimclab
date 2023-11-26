@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiMClab - Home</title>
+    <link rel="stylesheet" href="styles/register.css">
+    <script src="js/btn.js"></script>
+    <!-- Link to CSS will be added later -->
+</head>
+<body>
+    <!-- Banner -->
+    <section id="banner">
+        <img src="assets/AIMCLAB.png" alt="AiMClab Banner">
+    </section>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="store.html">Store</a>
+        <a href="amogus.html">About Us</a>
+        <button id="registerBtn">Register</button>
+    </nav>
+    <div class="registration-form">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="India">India</option>
+            </select>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter Password" required>
+            <input type="date" id="dob" name="dob" placeholder="Date of Birth" required>
+            <button type="submit">Register</button>
+        </form>
+        <div id="errorMessage"></div>
+    </div>
+
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 AiMClab. All Rights Reserved.</p>
+    </footer>
+    <script src="js/btn.js"></script>
+    <script src="js/reg.js"></script>
+</body>
+</html>
