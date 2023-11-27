@@ -34,6 +34,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         return;
     }
 
+    alert('Registration successful!');
 
 });
 
