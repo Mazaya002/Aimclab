@@ -20,7 +20,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 
 
     if (!validatePassword(document.getElementById('password').value)) {
-        displayError('Password must be at least 6 characters long.');
+        displayError('Password must be at least 6 characters long and include at least one number and one uppercase letter.');
         return;
     }
 
@@ -51,9 +51,21 @@ function validateCountry(country) {
 }
 
 function validatePassword(password) {
-    return password.length >= 6;
-}
+    let hasNumber = false;
+    let hasUpperCase = false;
 
+    for (let i = 0; i < password.length; i++) {
+        const char = password.charAt(i);
+        if (char >= '0' && char <= '9') {
+            hasNumber = true;
+        }
+        if (char >= 'A' && char <= 'Z') {
+            hasUpperCase = true;
+        }
+    }
+
+    return password.length >= 6 && hasNumber && hasUpperCase;
+}
 function validatePasswordMatch(password, confirmPassword) {
     return password === confirmPassword;
 }
